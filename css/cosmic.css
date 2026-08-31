@@ -9,13 +9,17 @@
 #app-bg-image {
   position: fixed;
   inset: 0;
-  z-index: -2;
-  background-image: url('../assets/backgrounds/tarot-reader.webp');
+  z-index: 0;
+  background-image: url('../assets/backgrounds/tarot-reader.jpg');
+  background-image: image-set(
+    url('../assets/backgrounds/tarot-reader.webp') type('image/webp'),
+    url('../assets/backgrounds/tarot-reader.jpg') type('image/jpeg')
+  );
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
-  opacity: 0.65;
-  filter: saturate(0.85) brightness(0.72);
+  opacity: 0.9;
+  filter: saturate(0.9) brightness(0.82);
   pointer-events: none;
   contain: strict;
 }
@@ -23,13 +27,13 @@
 #cosmic-bg {
   position: fixed;
   inset: 0;
-  z-index: -1;
+  z-index: 1;
   overflow: hidden;
   background:
-    radial-gradient(ellipse at 20% 15%, rgba(111,95,163,0.28), transparent 55%),
-    radial-gradient(ellipse at 80% 75%, rgba(58,74,143,0.28), transparent 55%),
-    radial-gradient(ellipse at 50% 100%, rgba(212,175,122,0.08), transparent 60%),
-    linear-gradient(180deg, rgba(5,6,18,0.55) 0%, rgba(9,11,29,0.62) 45%, rgba(12,14,34,0.72) 100%);
+    radial-gradient(ellipse at 20% 15%, rgba(111,95,163,0.12), transparent 55%),
+    radial-gradient(ellipse at 80% 75%, rgba(58,74,143,0.12), transparent 55%),
+    radial-gradient(ellipse at 50% 100%, rgba(212,175,122,0.05), transparent 60%),
+    linear-gradient(180deg, rgba(5,6,18,0.16) 0%, rgba(9,11,29,0.24) 45%, rgba(12,14,34,0.34) 100%);
   pointer-events: none;
 }
 
