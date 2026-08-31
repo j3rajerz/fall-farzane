@@ -1,0 +1,33 @@
+/* =========================================================
+   FAL FARZANEH — css/responsive.css
+   بخش ۴۹ و ۵۰ سند: تنظیمات ریزبین برای عرض‌های مختلف
+   ========================================================= */
+
+@media (max-width: 340px) {
+  .brand-title { font-size: 25px; }
+  .screen-title { font-size: 19px; }
+  .glass-panel { padding: 14px; }
+  .reading-card-visual { width: 108px; }
+  .intuitive-grid { gap: 7px; }
+}
+
+@media (min-width: 768px) {
+  .library-grid { grid-template-columns: repeat(4, 1fr); }
+  .home-actions-grid { grid-template-columns: 1fr 1fr; display: grid; gap: 12px; }
+}
+
+@media (min-width: 1024px) {
+  body { background: var(--bg-void); }
+}
+
+/* حالت لمسی: بزرگ‌تر کردن سطح لمس دکمه‌ها */
+@media (hover: none) {
+  .nav-item { padding: 8px 10px; }
+  .btn-icon { width: 44px; height: 44px; }
+}
+
+/* پشتیبانی از safe-area در دستگاه‌های notch‌دار */
+@supports (padding: max(0px)) {
+  #bottom-nav { padding-bottom: max(8px, var(--safe-bottom)); }
+  #view-root { padding-top: max(16px, calc(16px + var(--safe-top))); }
+}
