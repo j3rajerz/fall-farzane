@@ -1,0 +1,14 @@
+{
+  "name": "فال فرزانه",
+  "short_name": "فال فرزانه",
+  "description": "تجربه‌ای شخصی‌سازی‌شده و کیهانی از تاروت فارسی بر پایهٔ تاریخ تولد شمسی.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#05060f",
+  "theme_color": "#0a0d1f",
+  "lang": "fa",
+  "dir": "rtl",
+  "icons": []
+}
